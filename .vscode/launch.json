@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug SD-WAN Lab Tool",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "sdwan-lab",     // The Python module that is your entry point
+            "args": ["add","1","10","edges","17.15.03a"],        // Arguments you normally pass to the CLI
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env", // Optional: loads your .env file
+            "justMyCode": true
+        }
+    ]
+}
