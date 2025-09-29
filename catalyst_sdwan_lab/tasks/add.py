@@ -443,7 +443,7 @@ def main(
                 for next_num_str in new_nodes_nums:
                     uuid = free_uuids[increment_chassis]
                     new_routers_uuids[next_num_str] = uuid
-                    dhcp_exlude = f"192.168.{next_num_str}.1-192.168.{next_num_str}.99"
+                    dhcp_exlude = f"172.16.{user_site_id}.1-172.16.{user_site_id}.99"
                     # For every SD-WAN Edge, create a payload to attach template
                     variables_dict = {
                         "csv-status": "complete",
